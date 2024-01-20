@@ -1,2 +1,2 @@
 print("hello nigga!")
-print("no adjust niga")
+print("no adjust brotha")
