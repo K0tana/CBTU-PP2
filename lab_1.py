@@ -6,7 +6,7 @@ if 5 >= 4:
 
 # comments
 """THE FIRST AVATAR MOVIE WASN'T SO GOOD AS PEOPLE SAY """
-""" This if comment too"""
+""" This is comment too"""
 
 # variables
 a1, b1 = 5, 6
@@ -41,7 +41,7 @@ print([type(i) for i in f])
 
 
 # strings
-p = "hello world"
+p = "HelLo wOrlD"
 print(p.lower())
 print(p.upper())
 print(p.strip())
