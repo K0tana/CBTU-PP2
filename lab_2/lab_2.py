@@ -4,11 +4,10 @@ print(1 == 1)
 print(2 == 1)
 
 # it also demands in numeos of operators
-while(True):
-	print("this sycle if infinite")
-	break
-	
-	
+while (True):
+    print("this sycle if infinite")
+    break
+
 # Operators working on variables and values, including arithmetic, logical, membership, and identity operations.
 
 
@@ -19,9 +18,9 @@ print(a // c)
 print(b % c)
 print(c / b)
 for i in range(3):
-	print(a - i)
+    print(a - i)
 if a == b or a < c:
-	print("kinda poor examples")
+    print("kinda poor examples")
 
 # List, tuples and sets
 
@@ -45,8 +44,28 @@ computers.update(smartphones)
 print(*computers)
 computers.discard("oppo")
 
-# dic
+# dictionary
+movie = {"name": "Ford vs Ferrari", "genre": "historical", "year": 1921, "time": 204, "actor": "Christian Bale"}
 
+movie[year] = 2020
+mocie.pop("actor")
+print(movie.get("name"))
 
+# operators if/else
 
+if int(input('Введите число')) % 2 == 0:
+    print("Число чётное, либо равно 0 ")
+else:
+    print("Число не четное")
+print("That was true") if 3 == 5 else print("That was fkn lie")
 
+a = 50
+b = 10
+if a == b:
+    print("a == b")
+
+elif a > b:
+    print("A is larger")
+
+else:
+    print("B is larger")
