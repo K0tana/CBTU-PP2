@@ -47,8 +47,8 @@ computers.discard("oppo")
 # dictionary
 movie = {"name": "Ford vs Ferrari", "genre": "historical", "year": 1921, "time": 204, "actor": "Christian Bale"}
 
-movie[year] = 2020
-mocie.pop("actor")
+movie["year"] = 2020
+movie.pop("actor")
 print(movie.get("name"))
 
 # operators if/else
@@ -70,4 +70,4 @@ elif a > b:
 else:
     print("B is larger")
 
-print([x for x in range(10) if x % 2 == 0])
+print(*[x for x in range(10) if x % 2 == 0])
