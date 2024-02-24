@@ -1,0 +1,30 @@
+2024-02-24T02:36:50.219264+0600, DEBUG, None
+2024-02-24T02:36:50.219684+0600, DEBUG, None
+2024-02-24T02:36:50.219960+0600, DEBUG, None
+2024-02-24T02:36:50.220175+0600, DEBUG, None
+2024-02-24T02:36:50.220378+0600, DEBUG, None
+2024-02-24T02:36:50.220575+0600, DEBUG, None
+2024-02-24T02:36:50.220771+0600, DEBUG, None
+2024-02-24T02:36:50.220962+0600, DEBUG, None
+2024-02-24T02:36:50.221181+0600, DEBUG, None
+2024-02-24T02:36:50.221372+0600, DEBUG, None
+2024-02-24T02:36:50.221558+0600, DEBUG, None
+2024-02-24T02:36:50.221759+0600, DEBUG, None
+2024-02-24T02:36:50.222009+0600, DEBUG, None
+2024-02-24T02:36:50.222198+0600, DEBUG, None
+2024-02-24T02:36:50.222402+0600, DEBUG, None
+2024-02-24T02:36:50.222589+0600, DEBUG, None
+2024-02-24T02:36:50.222948+0600, DEBUG, None
+2024-02-24T02:36:50.223163+0600, DEBUG, None
+2024-02-24T02:44:12.266054+0600, ERROR, An error has been caught in function '<module>', process 'MainProcess' (11509), thread 'MainThread' (140030237163520):
+Traceback (most recent call last):
+
+> File "/home/arch1tect/work/lab_4/lab_4.py", line 26, in <module>
+    find()
+    └ <function find at 0x7f5b52f537f0>
+
+  File "/home/arch1tect/work/lab_4/lab_4.py", line 22, in find
+    in_3 = i["l1PhysIf"]["attriutes"]["mtu"]
+           └ {'l1PhysIf': {'attributes': {'adminSt': 'up', 'autoNeg': 'on', 'brkoutMap': 'none', 'bw': '0', 'childAction': '', 'delay': '1...
+
+KeyError: 'attriutes'
