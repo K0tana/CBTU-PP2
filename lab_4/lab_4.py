@@ -1,6 +1,6 @@
 from loguru import logger
 import json
-logger.add("debug.log", format="{time}, {level}, {message}", level="DEBUG", rotation="10 KB", compression="zip")
+logger.add("debug/debug.log", format="{time}, {level}, {message}", level="DEBUG", rotation="10 KB", compression="zip")
 
 with open('data.json') as f:
     data = json.load(f)
