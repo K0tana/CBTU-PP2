@@ -26,29 +26,24 @@ def find():
 a = 1
 find()
 
-# Generator to generate squares of numbers up to N
 def generate_squares(N):
     for i in range(N+1):
         yield i*i
 
-# Program to print even numbers between 0 and n
 def print_even_numbers(n):
     for i in range(n+1):
         if i % 2 == 0:
             print(i, end=', ')
 
-# Generator function to yield numbers divisible by 3 and 4 between 0 and n
 def divisible_by_3_and_4(n):
     for i in range(n+1):
         if i % 3 == 0 and i % 4 == 0:
             yield i
 
-# Generator function to yield squares of numbers from a to b
 def squares(a, b):
     for i in range(a, b+1):
         yield i*i
 
-# Generator function to return all numbers from n down to 0
 def numbers_down_to_zero(n):
     while n >= 0:
         yield n
@@ -119,7 +114,6 @@ def main():
     print("Trapezoid area:", area_trap)
     print()
 
-    # Calculate polygon area
     sides = 4
     length_side = 25
     area_polygon = polygon_area(sides, length_side)
@@ -128,7 +122,6 @@ def main():
     print("Polygon area:", area_polygon)
     print()
 
-    # Calculate parallelogram area
     base_parallelogram = 5
     height_parallelogram = 6
     area_parallelogram = parallelogram_area(base_parallelogram, height_parallelogram)
