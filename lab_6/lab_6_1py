@@ -1,0 +1,55 @@
+import time
+import math
+from functools import reduce
+
+def multiply_list(numbers):
+    result = reduce(lambda x, y: x * y, numbers)
+    return result
+
+def count_upper_lower(string):
+    upper_count = sum(1 for char in string if char.isupper())
+    lower_count = sum(1 for char in string if char.islower())
+    return upper_count, lower_count
+
+
+def is_palindrome(string):
+    return string == string[::-1]
+
+
+def square_root_after_delay(number, milliseconds):
+    time.sleep(milliseconds / 1000)
+    result = math.sqrt(number)
+    return result
+
+def all_true_in_tuple(data):
+    return all(data)
+def main():
+    # Multiply all Numbers in a List
+    numbers = [1, 2, 3, 4, 5]
+    result_multiply = multiply_list(numbers)
+    print("Multiplication of all numbers:", result_multiply)
+
+    input_string = "Hello World"
+    upper, lower = count_upper_lower(input_string)
+    print("Number of uppercase letters:", upper)
+    print("Number of lowercase letters:", lower)
+
+    test_string = "level"
+    if is_palindrome(test_string):
+        print("String is a palindrome.")
+    else:
+        print("String is not a palindrome.")
+
+    number = 25100
+    delay = 2123
+    start_time = time.time()
+    result_sqrt = square_root_after_delay(number, delay)
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Square root of {number} after {delay} milliseconds is {result_sqrt}")
+    print(f"Elapsed time: {elapsed_time} seconds")
+
+    tuple1 = (True, True, True)
+    tuple2 = (True, False, True)
+    print("All elements true in tuple1:", all_true_in_tuple(tuple1))
+    print("All elements true in tuple2:", all_true_in_tuple(tuple2))
